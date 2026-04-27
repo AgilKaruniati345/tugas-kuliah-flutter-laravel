@@ -7,12 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Task extends Model
 {
    protected $fillable = [
+    'user_id',
     'title',
     'description',
     'status',
-    'user_id',
-    'category_id',
-    'deadline' // 🔥 TAMBAH INI
+    'deadline'
 ];
 
     // relasi ke user
